@@ -45,10 +45,14 @@ mistral-common>=1.11.2
 mypy==1.18.2
 # For NATS object store verification in router tests
 nats-py==2.12.0
+# Required by benchmarks.router.common and prefix_data_generator during pytest collection.
+networkx==3.6.1
+numpy
 openai==2.32.0  # for Fault Tolerance migration tests
 # Protobuf definitions the OTLP parity receiver decodes; see grpcio above.
 # Version-matched to the opentelemetry-* pins in requirements.common.txt.
 opentelemetry-proto<=1.38.0
+pandas
 pandas-stubs>=1.3.0
 psutil<=7.0.0  # System package, may vary by platform (was >=5.0.0)
 # Required by pyproject.toml warning filters (pydantic.warnings.PydanticDeprecatedSince20)
