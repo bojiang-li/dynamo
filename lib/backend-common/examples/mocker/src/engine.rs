@@ -366,6 +366,7 @@ impl LLMEngine for MockerBackend {
                 enable_eagle: false,
                 data_parallel_size: None,
                 data_parallel_start_rank: None,
+                enable_eagle: false,
                 // Mocker has no real KV transport, so it never advertises a
                 // bootstrap address.
                 bootstrap_host: None,
